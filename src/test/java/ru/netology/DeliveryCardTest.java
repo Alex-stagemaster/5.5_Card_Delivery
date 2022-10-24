@@ -97,7 +97,7 @@ public class DeliveryCardTest {
         $("[name='phone']").sendKeys("+79123456789");
         $("[data-test-id=agreement] .checkbox__box").click();
         $("button.button").click();
-        $("[data-test-id='city'].input_invalid .input__sub").shouldBe(visible).
+        $("[data-test-id=city].input_invalid .input__sub").shouldBe(visible).
                 shouldHave(exactText("Доставка в выбранный город недоступна"));
     }
 
